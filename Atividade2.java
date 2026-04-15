@@ -2,31 +2,38 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lacosderepeticao;
+package while_dowhile;
 
 import java.util.Scanner;
 
-/**
+/**Crie um programa em Java que calcule a soma de todos os números inteiros de 1 até 100 utilizando a estrutura de repetição while.
+
+👉 Para isso:
+
+Crie uma variável para controlar a contagem (começando em 1)
+Crie uma variável para armazenar a soma
+A cada repetição:
+some o valor atual à variável de soma
+avance para o próximo número
+Ao final, exiba o resultado da soma
+💡 Dica: pense em como fazer o programa repetir até chegar no número 100.
  *
  * @author daniel.wrtavares
  */
 public class Atividade2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int numero, soma = 0;
-        System.out.println("Digite um numero Inteiro positivo: ");
-        numero = sc.nextInt();
         
+        int contagem = 0;
+        int soma = 0;
         
-        for (int i = 1; i < numero; i++) {
+        while ( contagem <= 100) {
             
-            
-            if (i%2 ==0 ) {
-                
-                soma += i;
-                 System.out.println(soma);
-                
-            }
+            soma =+ contagem;
+   
         }
+        System.out.println("Resultado: " + soma);
+        
     }
+    
 }
